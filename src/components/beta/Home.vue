@@ -1,6 +1,9 @@
 <template>
 <el-container id="home-container">
-
+<div>
+    <!-- meta元数据-->
+     <meta name="description" content="东南大学校车可视化平台：东南大学校车可视化系统于2024年5月开发，根据东大校园的校车运行情况，提供一个能够实时查看校车运行情况的平台。学生们可以在网站内查看站点信息、校车运行信息、校车实时位置等，帮助学生们便捷乘车，方便学生出行。">
+</div>
 <el-header>
     <div>
         <span style="vertical-align: middle; color: #fff; font-size: 24px; font-weight: bolder;"> 校车可视化平台    </span>
