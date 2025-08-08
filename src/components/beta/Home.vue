@@ -1,9 +1,5 @@
 <template>
 <el-container id="home-container">
-<div>
-    <!-- meta元数据-->
-     <meta name="description" content="东南大学校车可视化平台：东南大学校车可视化系统于2024年5月开发，根据东大校园的校车运行情况，提供一个能够实时查看校车运行情况的平台。学生们可以在网站内查看站点信息、校车运行信息、校车实时位置等，帮助学生们便捷乘车，方便学生出行。">
-</div>
 <el-header>
     <div>
         <span style="vertical-align: middle; color: #fff; font-size: 24px; font-weight: bolder;"> 校车可视化平台    </span>
@@ -27,7 +23,7 @@
                 </el-button>
                 <!--/div-->
             </Tooltip>
-        </div>>
+        </div>
         <!-- 接驳车 -->
         <bm-marker
             v-for="(shuttle, index) in shuttleList"
@@ -268,7 +264,7 @@ export default {
         //this.getStationTime()
         this.interval = setInterval(() =>{ this.getShuttleInfo() },2500)
     },
-    mounted: function() {
+    mounted: function(){
         //console.log("mounted")
     },
     destroyed(){
@@ -573,7 +569,8 @@ export default {
                 });
         },
         goBusNotice() {
-            window.location.href = 'https://zwc.seu.edu.cn/2023/1110/c4297a471847/page.htm'
+            //校园接驳车网址会随着更新更改。。。导致旧连接无法访问
+            window.location.href = 'https://zwc.seu.edu.cn/2024/0914/c4297a502881/pagem.htm'
         },
 
         ready({ BMap, map}){
